@@ -8,16 +8,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <div id="dynamic-menu"></div>
   <!-- Navbar -->
   <div class="navbar">
+    <div id="total-likes">❤️ 0</div>
+    <div id="cart">🛒 <span id="cart-count">0</span></div>
     <div class="logo">KOPPEE</div>
 
-    <!-- Hamburger Icon (label for checkbox) -->
+    <!-- Hamburger Icon. (label for checkbox) -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
     <!-- Nav Links -->
     <div class="nav-links">
+      <input type="text" id="search" placeholder="Search coffee..." />
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#menu">Menu</a>
@@ -59,44 +64,105 @@
   </section>
 
   <!-- Menu -->
-  <section id="menu" class="menu">
-    <h2>Our Special Menu</h2>
-    <div class="menu-container">
-      <div class="menu-card">
-        <img src="./images/img 2.png" alt="Espresso">
-        <h3>Espresso</h3>
-        <p>Strong and bold</p>
-      </div>
-      <div class="menu-card">
-        <img src="https://cdn.pixabay.com/photo/2014/12/11/02/56/coffee-563797_1280.jpg" alt="Cappuccino">
-        <h3>Cappuccino</h3>
-        <p>Foamy and creamy</p>
-      </div>
-      <div class="menu-card">
-        <img src="./images/img 3.jpg" alt="Latte">
-        <h3>Latte</h3>
-        <p>Smooth and milky</p>
-      </div>
-      <div class="menu-card">
-        <img src="images/img 4.jpg" alt="Mocha">
-        <h3>Mocha</h3>
-        <p>Coffee with chocolate twist</p>
-      </div>
+   <section id="menu" class="menu">
+  <h2>Our Special Menu</h2>
+  <div class="menu-container">
+
+    <div class="menu-card post">
+      <img src="./images/img 2.png" alt="Espresso">
+      <h3>Espresso</h3>
+      <button class="add-to-cart">Add to Cart 🛒</button>
+      <p>Strong and bold</p>
     </div>
-  </section>
+
+    <div class="menu-card post">
+      <img src="https://cdn.pixabay.com/photo/2014/12/11/02/56/coffee-563797_1280.jpg" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+        <button class="add-to-cart">Add to Cart 🛒</button>
+      <p>Foamy and creamy</p>
+    </div>
+
+    <div class="menu-card post">
+      <img src="./images/img 3.jpg" alt="Latte">
+      <h3>Latte</h3>
+      <button class="add-to-cart">Add to Cart 🛒</button>
+      <p>Smooth and milky</p>
+    </div>
+
+    <div class="menu-card post">
+      <img src="images/img 4.jpg" alt="Mocha">
+      <h3>Mocha</h3>
+      <button class="add-to-cart">Add to Cart 🛒</button>
+      <p>Coffee with chocolate twist</p>
+    </div>
+
+    <div class="menu-card post">
+  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Americano">
+  <h3>Americano</h3>
+  <button class="add-to-cart">Add to Cart 🛒</button>
+  <p>Rich espresso with hot water</p>
+</div>
+
+<div class="menu-card post">
+  <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86" alt="Cold Coffee">
+  <h3>Cold Coffee</h3>
+  <button class="add-to-cart">Add to Cart 🛒</button>
+  <p>Chilled and refreshing</p>
+</div>
+
+<div class="menu-card post">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-yT0K3_j_9pMwoKE6LnCj4gzNV3Tin1Eyw&s" alt="Iced Latte">
+  <h3>Iced Latte</h3>
+  <button class="add-to-cart">Add to Cart 🛒</button>
+  <p>Cool and creamy</p>
+</div>
+
+<div class="menu-card post">
+  <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Black Coffee">
+  <h3>Black Coffee</h3>
+  <button class="add-to-cart">Add to Cart 🛒</button>
+  <p>Strong and pure</p>
+</div>
+
+  </div>
+</section>
 
   <!-- Gallery -->
   <section id="gallery" class="gallery">
-    <h2>Our Gallery</h2>
+    <h2>Gallery</h2>
     <div class="gallery-container">
-      <img src="./images/img 5.jpg" alt="">
-      <img src="./images/img 6.jpg" alt="">
-      <img src="./images/img 7.jpg" alt="">
-      <img src="./images/img 9.jpg" alt="">
-      <img src="https://www.shutterstock.com/image-photo/group-selection-different-italian-coffee-600nw-2471102291.jpg" alt="">
-      <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170400422/75968699-a-cup-of-latte-different-types-of-coffee-single-icon-in-cartoon-style-vector-symbol-stock.jpg" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YR7wBGtxBj7sxfNNXLAlJSv6kmdgKhqWfA&s" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPUuHcOPyMYvXhs_7IUXpcj9_bQGOEKvd24w&s" alt="">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
+      <div class="gallery-item">
+        <img src="https://yorkemporium.co.uk/cdn/shop/articles/AdobeStock_315403482_1_b207df01-70f2-407f-ab1f-64f8b66bb010.jpg?v=1756975415&width=5760" alt="">
+        <button class="like-btn">❤️0</button>
+      </div>
     </div>
   </section>
 
@@ -160,7 +226,18 @@
   <div class="footer-bottom">
     <p>&copy; 2025 Koppee Coffee Shop | Designed by You</p>
   </div>
+
+  <div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+<span class="prev">❮</span>
+<span class="next">❯</span>
+
+<!-- Adding the js file with the html -->
+  <script src="script.js"></script>
 </footer>
+<div id="toast">Added to cart 🛒</div>
 
 </body>
 </html>
