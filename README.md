@@ -15,7 +15,7 @@ An interactive frontend project built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## 🌐 Live Demo
-(Will add after deployment)
+Live Demo
 
 ## 👨‍💻 Author
 Nithin
