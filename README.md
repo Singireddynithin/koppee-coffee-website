@@ -15,7 +15,7 @@ An interactive frontend project built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## 🌐 Live Demo
-Live Demo
+https://singireddynithin.github.io/koppee-coffee-website/
 
 ## 👨‍💻 Author
 Nithin
